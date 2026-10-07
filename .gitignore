@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual environments
+venv/
+env/
+.env
+
+# Logs and databases
+*.log
+API/app.log
+Database/data/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Temporary user session data
+Temp/*
+!Temp/.gitkeep
+
+# Large Deep Learning Model Weights (>100MB cannot be pushed to standard GitHub)
+# (Local weights are preserved in your folder)
+Models/ner_model_*

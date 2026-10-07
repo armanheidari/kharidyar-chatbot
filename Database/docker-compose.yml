@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+    postgres:
+        image: mysql:8.4.0
+        container_name: mysql_kharidyar
+        ports:
+            - 24000:3306
+        volumes:
+            - ./data/conf.d:/etc/mysql/conf.d
+            - ./data/logs:/logs
+            - /usr/local/var/mysql:/var/lib/mysql
+        environment:
+            MYSQL_DATABASE:
+                'kharidyar'
+                # MYSQL_USER: 'root'
+                # MYSQL_PASSWORD: '12345678'
+            MYSQL_ROOT_PASSWORD: '12345678'
+        profiles:
+            - db
